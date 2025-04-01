@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Webmail 7.0</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="md:bg-[#1D2937] md:fixed md:dark:bg-darkColor md:top-0 md:left-0 md:z-50 md:w-full md:h-12 md:items-center">
+        <img src="img/navstatus-logo.png" alt="" class="w-84">
+    </nav>
+
+    <div id="form" class="flex justify-center md:mt-24 ml-10 mr-5 md:mx-auto">
+        <form action="">
+            <div class="md:border md:border-gray-400 md:p-4 md:h-94 md:ml-10 mx-auto">
+                <h1 id="title" class="md:mt-10 text-center text-4xl text-gray-500">Web<span class="text-[#1D2937] font-semibold">mail</span></h1>
+                <div class="md:mx-auto md:items-center pt-12">
+                    <div class="mt-20">
+                        <input type="email" id="email" required placeholder="Email" class="text-sm placeholder:text-sm placeholder:text-gray-400 placeholder:pl-2 md:placeholder:text-gray-600 md:w-[330px] w-[200px] p-1 h-8 border border-gray-300 md:border-gray-500 focus:outline-none">
+                    </div>
+
+                    <div class="mt-4">
+                        <input type="password" id="password" required placeholder="Password" class="md:w-[330px] w-[200px] md:text-gray-400 placeholder:text-sm h-8 p-1 border pl-2 placeholder:pl-2 focus:outline-none md:border-gray-500 md:placeholder:text-gray-600">
+                    </div>
+                </div>
+                <button onclick="redirect()" class="mt-10 w-full rounded-md inline-block md:mt-4 md:bg-[#0E57AB] bg-[#3684f1] text-white text-xs py-2 font-semibold">Log in</button>
+                <p class=" text-right  mt-3 md:mr-0 text-sm md:text-[#0E57AB] text-[#3684f1]"><a href="">Forgot password?</a></p>   
+            </div>
+        </form>
+    </div>
+      <div class="md:flex md:justify-center text-white ">
+        <hr class="text-white md:mt-5 md:ml-10 md:w-[360px] w-[0px]">
+      </div> 
+    <div class="md:flex md:flex-row md:space-x-2 md:mt-4 md:pl-16 md:pr-6 justify-start md:justify-center"> 
+        <p class="text-white md:capitalize md:text-sm md:font-semibold md:text-black md:p-2 md:border-none md:outline-none md:text-start md:pl-2 md:mr-14">language:</p>
+        <select name="" id="" class="focus:border-none text-white w-0 md:w-56 md:font-semibold md:text-sm md:cursor-pointer md:text-gray-500 md:border md:px-4 md:py-2 md:focus:outline-none">
+          <option value="" class="">English (US)</option>
+          <option value="">English (UK)</option>
+          <option value="">Deutsch</option>
+          <option value="">Espanol</option>
+          <option value="">Francais</option>
+          <option value="">Italiano</option>
+          <option value="">Nederlands</option>
+          <option value="">Svenski</option>
+          <option value="">Polski</option>
+        </select>
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>
